@@ -3,6 +3,7 @@ import "./App.css";
 import Navbar from "./components/Navbar";
 import Hero from "./components/Hero";
 import Gallery from "./components/Gallery";
+import Review from "./components/Review";
 
 function App() {
   return (
@@ -11,8 +12,13 @@ function App() {
       <main>
         <Hero />
       </main>
+      {/* gallery */}
       <section>
         <Gallery />
+      </section>
+      {/* review */}
+      <section>
+        <Review />
       </section>
     </div>
   );
