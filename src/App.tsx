@@ -4,6 +4,8 @@ import Navbar from "./components/Navbar";
 import Hero from "./components/Hero";
 import Gallery from "./components/Gallery";
 import Review from "./components/Review";
+import Services from "./components/Services";
+import InfoSection from "./components/InfoSection";
 
 function App() {
   return (
@@ -20,6 +22,14 @@ function App() {
       <section>
         <Review />
       </section>
+      {/* services */}
+      <section>
+        <Services />
+      </section>
+      {/* footer info */}
+      <footer>
+        <InfoSection />
+      </footer>
     </div>
   );
 }

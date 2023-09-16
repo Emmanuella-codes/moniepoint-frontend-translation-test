@@ -1,6 +1,6 @@
 interface NavProps {
   name: string;
-  href: string;
+  href?: string;
   current: boolean;
   hasDropdown?: boolean;
   dropdownItems?: Array<NavProps>;
@@ -49,4 +49,12 @@ export const navigation: Array<NavProps> = [
   { name: "About us", href: "#", current: false },
   { name: "Blog", href: "#", current: false },
   { name: "Career", href: "#", current: false },
+];
+
+export const infoItems: Array<NavProps> = [
+  { name: "Travel", current: false },
+  { name: "Health", current: false },
+  { name: "CASCO", current: false },
+  { name: "Mortgage", current: false },
+  { name: "Fire", current: false },
 ];
