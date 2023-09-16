@@ -1,10 +1,7 @@
-import { BiChevronDown } from "react-icons/bi";
-
 interface NavProps {
   name: string;
   href: string;
   current: boolean;
-  icon?: any;
   hasDropdown?: boolean;
   dropdownItems?: Array<NavProps>;
 }
@@ -16,7 +13,6 @@ export const navigation: Array<NavProps> = [
     href: "#",
     current: false,
     hasDropdown: true,
-    icon: BiChevronDown,
     dropdownItems: [
       {
         name: "Home Insurance",
