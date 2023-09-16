@@ -3,10 +3,10 @@ import { HiOutlineArrowLongDown } from "react-icons/hi2";
 
 const Hero = () => {
   return (
-    <div className="grid grid-cols-2 gap-2 px-10 py-5">
+    <div className="grid grid-cols-2 gap-2 px-20 py-5">
       {/* hero elements */}
       <div>
-        <h1 className="font-['Big Shoulders Display'] text-white text-[7.2rem] leading-[1] font-semibold">
+        <h1 className="font-primary-1 text-white text-[9.4rem] leading-[0.9] font-bold">
           Darcy's insurance products
         </h1>
       </div>
