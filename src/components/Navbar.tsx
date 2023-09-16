@@ -46,7 +46,7 @@ const Navbar = () => {
                 <img
                   className="h-9 w-auto"
                   src="/logo.png"
-                  alt="Your Company"
+                  alt="logo"
                 />
               </div>
 

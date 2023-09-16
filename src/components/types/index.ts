@@ -58,3 +58,19 @@ export const infoItems: Array<NavProps> = [
   { name: "Mortgage", current: false },
   { name: "Fire", current: false },
 ];
+
+export const services = [
+  "Medical expenses",
+  "Family health insurance",
+  "Vehicle damage",
+  "Property loss",
+  "Fire",
+  "About us",
+  "Career",
+  "Help",
+  "FAQ",
+  "Blog",
+  "Gift certificate",
+  "Affiliate Program",
+  "Trainings",
+];
