@@ -11,25 +11,27 @@ function App() {
   return (
     <div className="">
       <Navbar />
-      <main>
-        <Hero />
-      </main>
-      {/* gallery */}
-      <section>
-        <Gallery />
-      </section>
-      {/* review */}
-      <section>
-        <Review />
-      </section>
-      {/* services */}
-      <section>
-        <Services />
-      </section>
-      {/* footer info */}
-      <footer>
-        <InfoSection />
-      </footer>
+      <div className="px-5">
+        <main>
+          <Hero />
+        </main>
+        {/* gallery */}
+        <section>
+          <Gallery />
+        </section>
+        {/* review */}
+        <section>
+          <Review />
+        </section>
+        {/* services */}
+        <section>
+          <Services />
+        </section>
+        {/* footer info */}
+        <footer>
+          <InfoSection />
+        </footer>
+      </div>
     </div>
   );
 }

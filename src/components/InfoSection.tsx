@@ -14,13 +14,13 @@ const InfoSection = () => {
 
   return (
     <>
-      <div className="grid grid-cols-2 text-white px-[5rem] gap-9 my-16">
+      <div className="grid md:grid-cols-2 text-white md:px-[5rem] gap-9 my-16">
         <div className="w-[80%]">
           <div className="flex flex-col gap-9">
             <div>
               <h4 className="font-primary-1 text-5xl">Need numbers?</h4>
             </div>
-            <div className="flex flex-row gap-4">
+            <div className="flex flex-row flex-wrap gap-4">
               {infoItems.map((item, idx) => (
                 <button
                   key={idx}
@@ -30,7 +30,7 @@ const InfoSection = () => {
                 </button>
               ))}
             </div>
-            <div className="flex flex-row gap-3">
+            <div className="flex flex-col md:flex-row gap-5 md:gap-3">
               <label className="">
                 <span className=" block text-sm font-medium text-slate-300">
                   Enter the country
@@ -67,7 +67,7 @@ const InfoSection = () => {
         <div className="flex flex-col gap-16">
           <div className="">
             <h5>Insurance services</h5>
-            <div className="flex flex-row gap-4">
+            <div className="flex flex-row flex-wrap gap-4">
               {services.slice(0, 5).map((item, idx) => (
                 <button key={idx} className="text-slate-500">
                   {item}
@@ -77,7 +77,7 @@ const InfoSection = () => {
           </div>
           <div>
             <h5>Company</h5>
-            <div className="flex flex-row gap-4">
+            <div className="flex flex-row flex-wrap gap-4">
               {services.slice(5, 10).map((item, idx) => (
                 <button key={idx} className="text-slate-500">
                   {item}
@@ -87,7 +87,7 @@ const InfoSection = () => {
           </div>
           <div>
             <h5>Bonus</h5>
-            <div className="flex flex-row gap-4">
+            <div className="flex flex-row flex-wrap gap-4">
               {services.slice(10, 13).map((item, idx) => (
                 <button key={idx} className="text-slate-500">
                   {item}
@@ -104,7 +104,7 @@ const InfoSection = () => {
 
 const Footer = () => {
   return (
-    <div className="flex flex-row justify-between text-white px-16 pb-1">
+    <div className="flex flex-row justify-between items-center text-white md:px-16 pb-1">
       <div className="flex flex-row items-center">
         <div className="flex-shrink-0 items-center">
           <img src="/logo-white.png" alt="logo" className="h-9 w-auto" />

@@ -2,9 +2,9 @@ import React from "react";
 
 const Services = () => {
   return (
-    <div className="flex text-white px-[5rem] gap-20 mt-7">
+    <div className="flex flex-col md:flex-row text-white md:px-[5rem] gap-20 mt-7">
       <div className="">
-        <h4 className="font-primary-1 text-7xl leading-[1] w-[56%]">
+        <h4 className="font-primary-1 text-[5rem] md:text-7xl leading-[1] w-[70%] md:w-[56%]">
           Support at every <span className="text-[7.8rem]">Step</span>
         </h4>
       </div>
@@ -16,7 +16,7 @@ aspect-square w-8 h-8 flex justify-center items-center text-very-dark-blue text-
           >
             *
           </div>
-          <p className="text-sm">
+          <p className="text-sm md:text-lg">
             Participate in the{" "}
             <span className="text-light-blue underline">loyalty program</span>.
             Pay for the service online to get bonuses for our other services. We
@@ -30,7 +30,7 @@ aspect-square w-8 h-8 flex justify-center items-center text-very-dark-blue text-
           >
             *
           </div>
-          <p className="text-sm">
+          <p className="text-sm md:text-lg">
             You can help other people: choose a donation fund and share the link
             with your friends!
           </p>
@@ -41,7 +41,7 @@ aspect-square w-8 h-8 flex justify-center items-center text-very-dark-blue text-
           </button>
         </div>
       </div>
-      <div className="w-[18%]">
+      <div className="md:w-[20%]">
         <img src="/images/family.jpg" alt="family" className="rounded-full " />
       </div>
     </div>

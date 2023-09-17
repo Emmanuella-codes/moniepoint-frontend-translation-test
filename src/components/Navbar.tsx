@@ -17,7 +17,7 @@ const Navbar = () => {
   };
 
   return (
-    <Disclosure as="nav" className="container text-white">
+    <Disclosure as="nav" className="container text-white max-w-full">
       {({ open }) => (
         <>
           <div className="max-w-full px-2 sm:px-6 lg:px-8">
@@ -43,11 +43,7 @@ const Navbar = () => {
 
               {/* Logo Section */}
               <div className="flex-shrink-0 items-center">
-                <img
-                  className="h-9 w-auto"
-                  src="/logo.png"
-                  alt="logo"
-                />
+                <img className="h-9 w-auto" src="/logo.png" alt="logo" />
               </div>
 
               {/* Navigation List Section */}
@@ -131,15 +127,16 @@ const Navbar = () => {
                 <div className="flex justify-center space-x-4">
                   <button
                     type="button"
-                    className="relative rounded-full bg- p-1 text-gray-400 hover:text-white focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-gray-800"
+                    className="relative rounded-full bg-light-blue px-4 py-2 text-black hover:text-white focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-gray-800"
                   >
                     Contact Us
                   </button>
                   <button
                     type="button"
-                    className="relative rounded-full bg-gray-800 p-1 text-gray-400 hover:text-white focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-gray-800"
+                    className="relative flex flex-row items-center gap-2 rounded-full text-gray-400 hover:text-white focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-gray-800"
                   >
-                    Login
+                    <LuKey />
+                    <span>Login</span>
                   </button>
                 </div>
               </div>

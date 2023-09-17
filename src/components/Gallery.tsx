@@ -2,8 +2,8 @@ import React from "react";
 
 const Gallery = () => {
   return (
-    <div className="text-white my-16 px-[5rem]">
-      <div className="grid grid-cols-5 gap-12">
+    <div className="text-white my-16 md:px-[5rem]">
+      <div className="grid md:grid-cols-5 gap-12">
         <div className="gallery-1 col-span-2 relative">
           <img
             src="/images/living-interior.jpg"
@@ -18,10 +18,10 @@ const Gallery = () => {
           <img
             src="/images/lifebuoy.jpg"
             alt="lifebuoy"
-            className="rounded-full h-[55vh]"
+            className="rounded-full h-[25vh] md:h-[55vh]"
           />
         </div>
-        <div className="col-span-2 px-14 py-9 bg-dark-blue rounded-[4rem]">
+        <div className="col-span-2 px-7 md:px-14 py-9 bg-dark-blue rounded-[4rem]">
           <div>
             <h4 className="font-primary-1 text-[4rem] pb-4">Best choice</h4>
             <p className="pb-10">
@@ -37,7 +37,7 @@ const Gallery = () => {
         </div>
       </div>
       {/* same size images */}
-      <div className="grid grid-cols-3 gap-4 pt-14">
+      <div className="grid md:grid-cols-3 gap-4 pt-14">
         <div className="relative">
           <img
             src="/images/car.jpg"
