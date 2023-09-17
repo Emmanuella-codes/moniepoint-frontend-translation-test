@@ -5,13 +5,13 @@ const Hero = () => {
   return (
     <div className="grid grid-cols-1 md:grid-cols-2 gap-2 md:px-20 pt-24 pb-5">
       {/* hero elements */}
-      <div className="animate__slideInLeft">
+      <div className="">
         <h1 className="font-primary-1 text-8xl text-white lg:text-[9.4rem] md:leading-[0.9] font-bold">
           Darcy's insurance products
         </h1>
       </div>
       <div className="grid grid-cols-1 mt-6 md:grid-cols-2">
-        <div className="flex flex-col gap-7 text-white md:w-4/5 animate__slideInLeft">
+        <div className="flex flex-col gap-7 text-white md:w-4/5">
           <div>
             <div
               className="mb-5 border-t-2 rounded-full bg-white animate-spin
@@ -40,7 +40,7 @@ aspect-square w-8 h-8 flex justify-center items-center text-very-dark-blue text-
             <HiOutlineArrowLongDown size={70} />
           </button>
         </div>
-        <div className="mt-5 md:mt-0 md:w-[77%] animate__slideInUp">
+        <div className="mt-5 md:mt-0 md:w-[77%]">
           <img
             src="/images/air-balloons.jpg"
             alt="air balloons"

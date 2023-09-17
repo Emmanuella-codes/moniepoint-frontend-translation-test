@@ -1,47 +1,14 @@
-import React, { useEffect } from "react";
+import React from "react";
 
 const Services = () => {
-  useEffect(() => {
-    const elements = document.querySelectorAll(
-      ".slide-up, .slide-right, .slide-left"
-    );
-    const options = {
-      root: null,
-      rootMargin: "0px",
-      threshold: 1,
-    };
-
-    const observer = new IntersectionObserver((entries) => {
-      entries.forEach((entry) => {
-        if (entry.isIntersecting) {
-          if (entry.target.classList.contains("slide-up")) {
-            entry.target.classList.add("animate__slideInUp");
-          }
-          if (entry.target.classList.contains("slide-right")) {
-            entry.target.classList.add("animate__slideInRight");
-          }
-          if (entry.target.classList.contains("slide-left")) {
-            entry.target.classList.add("animate__slideInLeft");
-          }
-        }
-      });
-    }, options);
-
-    elements.forEach((element) => {
-      observer.observe(element);
-    });
-
-    return () => observer.disconnect();
-  }, []);
-
   return (
     <div className="flex flex-col md:flex-row text-white md:px-[5rem] gap-20 my-20">
-      <div className="slide-left">
+      <div className="">
         <h4 className="font-primary-1 text-[5rem] md:text-7xl leading-[1] w-[70%] md:w-[59%]">
           Support at every <span className="text-[7.8rem]">Step</span>
         </h4>
       </div>
-      <div className="flex flex-col gap-3 slide-up">
+      <div className="flex flex-col gap-3">
         <div>
           <div
             className="mb-3 border-t-2 rounded-full bg-white animate-spin
@@ -74,7 +41,7 @@ aspect-square w-8 h-8 flex justify-center items-center text-very-dark-blue text-
           </button>
         </div>
       </div>
-      <div className="md:w-[25%] slide-up">
+      <div className="md:w-[25%]">
         <img src="/images/family.jpg" alt="family" className="rounded-full " />
       </div>
     </div>
