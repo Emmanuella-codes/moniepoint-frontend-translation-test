@@ -3,15 +3,15 @@ import { HiOutlineArrowLongDown } from "react-icons/hi2";
 
 const Hero = () => {
   return (
-    <div className="grid grid-cols-1 md:grid-cols-2 gap-2 md:px-20 pt-24 pb-5 ">
+    <div className="grid grid-cols-1 md:grid-cols-2 gap-2 md:px-20 pt-24 pb-5">
       {/* hero elements */}
       <div className="animate__slideInLeft">
         <h1 className="font-primary-1 text-8xl text-white lg:text-[9.4rem] md:leading-[0.9] font-bold">
           Darcy's insurance products
         </h1>
       </div>
-      <div className="grid grid-cols-1 mt-6 md:grid-cols-2 animate__slideInRight">
-        <div className="flex flex-col gap-7 text-white md:w-3/5">
+      <div className="grid grid-cols-1 mt-6 md:grid-cols-2">
+        <div className="flex flex-col gap-7 text-white md:w-3/5 animate__slideInLeft">
           <div>
             <div
               className="mb-5 border-t-2 rounded-full bg-white animate-spin
@@ -40,11 +40,11 @@ aspect-square w-8 flex justify-center items-center text-very-dark-blue text-2xl"
             <HiOutlineArrowLongDown size={70} />
           </button>
         </div>
-        <div className="mt-5 md:mt-0 md:w-[77%]">
+        <div className="mt-5 md:mt-0 md:w-[77%] animate__slideInUp">
           <img
             src="/images/air-balloons.jpg"
             alt="air balloons"
-            className="rounded-full  border-4 border-white border-opacity-50"
+            className="rounded-full"
           />
         </div>
       </div>

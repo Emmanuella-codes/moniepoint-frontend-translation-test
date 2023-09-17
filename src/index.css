@@ -47,12 +47,27 @@ body {
   }
 }
 
+@keyframes slideInUp {
+  0% {
+    transform: translateY(100%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+.animate__slideInUp {
+  animation: slideInUp 1.5s ease-in-out;
+}
+
 .animate__slideInLeft {
   animation: slideInLeft 1s ease-in-out;
 }
 
 .animate__slideInRight {
-  animation: slideInRight 1s ease-in-out;
+  animation: slideInRight 1s ease-out;
 }
 
 code {
