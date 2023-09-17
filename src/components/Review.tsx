@@ -2,9 +2,9 @@ import React from "react";
 
 const Review = () => {
   return (
-    <div className="grid grid-cols-3 px-[5rem] mb-1 text-white gap-20">
-      <div className="col-span-2 bg-dark-blue px-14 py-12 rounded-[4rem]">
-        <div className="grid grid-cols-3 gap-20">
+    <div className="grid grid-cols-1 md:grid-cols-3 md:px-[5rem] mb-1 text-white gap-20">
+      <div className="order-last md:col-span-2 bg-dark-blue px-14 py-12 rounded-[4rem]">
+        <div className="grid md:grid-cols-3 gap-3 md:gap-20">
           <div className="col-span-1">
             <img
               src="/images/review-1.jpg"
@@ -45,7 +45,7 @@ aspect-square w-8 h-8 flex justify-center items-center text-very-dark-blue text-
             *
           </div>
           <div>
-            <h4 className="font-primary-1 text-9xl leading-[0.9]">
+            <h4 className="font-primary-1 text-8xl md:text-9xl leading-[0.9]">
               Our experts say
             </h4>
           </div>
