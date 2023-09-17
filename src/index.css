@@ -15,7 +15,7 @@ body {
   background-color: var(--very-dark-blue);
 }
 
-.container {
+.navbar {
   background: linear-gradient(
     90deg,
     rgba(31, 40, 61, 1) 0%,
@@ -23,6 +23,10 @@ body {
     rgba(11, 15, 23, 1) 85%,
     rgba(31, 40, 61, 1) 100%
   );
+  backdrop-filter: blur(10px);
+  position: fixed;
+  width: 100% !important;
+  z-index: 1000;
 }
 
 code {

@@ -74,3 +74,46 @@ export const services = [
   "Affiliate Program",
   "Trainings",
 ];
+
+export const reviewData = [
+  {
+    image: "/images/review-1.jpg",
+    alt: "review 1",
+    name: "Georgia Darcy",
+    job: "The agency founder",
+    overview:
+      "With over twenty years of industry experience. Darcy'sinsurance products' has learned a lot. The one thing we know for sure is that we're all about you. If you find searching for insurance frustrating, we are here to help.",
+  },
+  {
+    image: "/images/review-2.jpg",
+    alt: "review 2",
+    name: "Emiko Sato",
+    job: "Insurance appraiser",
+    overview:
+      "Hi! I estimate the value of the insured events. Also, I conduct investigations, inspecting damaged cars and buildings. Therefore, I have a great responsibility for providing insurance to our clients. I hope you will be comfortable with us.",
+  },
+  {
+    image: "/images/review-1.jpg",
+    alt: "review 3",
+    name: "Georgia Darcy",
+    job: "The agency founder",
+    overview:
+      "With over twenty years of industry experience. Darcy'sinsurance products' has learned a lot. The one thing we know for sure is that we're all about you. If you find searching for insurance frustrating, we are here to help.",
+  },
+  {
+    image: "/images/review-2.jpg",
+    alt: "review 4",
+    name: "Emiko Sato",
+    job: "Insurance appraiser",
+    overview:
+      "Hi! I estimate the value of the insured events. Also, I conduct investigations, inspecting damaged cars and buildings. Therefore, I have a great responsibility for providing insurance to our clients. I hope you will be comfortable with us.",
+  },
+  {
+    image: "/images/review-1.jpg",
+    alt: "review 5",
+    name: "Georgia Darcy",
+    job: "The agency founder",
+    overview:
+      "With over twenty years of industry experience. Darcy'sinsurance products' has learned a lot. The one thing we know for sure is that we're all about you. If you find searching for insurance frustrating, we are here to help.",
+  },
+];
