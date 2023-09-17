@@ -58,6 +58,16 @@ body {
   }
 }
 
+@keyframes fadeIn {
+  0%,
+  100% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+}
+
 .animate__slideInUp {
   animation: slideInUp 1.5s ease-in-out;
 }
@@ -68,6 +78,10 @@ body {
 
 .animate__slideInRight {
   animation: slideInRight 1s ease-out;
+}
+
+.fade-in {
+  animation: fadeIn 3s alternate;
 }
 
 code {

@@ -11,11 +11,11 @@ const Hero = () => {
         </h1>
       </div>
       <div className="grid grid-cols-1 mt-6 md:grid-cols-2">
-        <div className="flex flex-col gap-7 text-white md:w-3/5 animate__slideInLeft">
+        <div className="flex flex-col gap-7 text-white md:w-4/5 animate__slideInLeft">
           <div>
             <div
               className="mb-5 border-t-2 rounded-full bg-white animate-spin
-aspect-square w-8 flex justify-center items-center text-very-dark-blue text-2xl"
+aspect-square w-8 h-8 flex justify-center items-center text-very-dark-blue text-3xl"
             >
               *
             </div>
@@ -27,7 +27,7 @@ aspect-square w-8 flex justify-center items-center text-very-dark-blue text-2xl"
           <div>
             <div
               className="mb-5 border-t-2 rounded-full bg-white animate-spin
-aspect-square w-8 flex justify-center items-center text-very-dark-blue text-2xl"
+aspect-square w-8 h-8 flex justify-center items-center text-very-dark-blue text-3xl"
             >
               *
             </div>

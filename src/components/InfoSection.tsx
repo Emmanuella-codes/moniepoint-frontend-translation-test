@@ -1,23 +1,51 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
+import DatePicker from "react-datepicker";
+import "react-datepicker/dist/react-datepicker.css";
 import { infoItems, services } from "./types";
 
 const InfoSection = () => {
-  const [dateRange, setDateRange] = useState("");
+  const [startDate, setStartDate] = useState<Date | null>(null);
+  const [endDate, setEndDate] = useState<Date | null>(null);
 
-  const handleDateChange = (event: any) => {
-    const inputDate = event.target.value;
-    const [start, end] = inputDate.split("-");
-    const startDate = new Date(start).toDateString();
-    const endDate = new Date(end).toDateString();
-    setDateRange(`${startDate} - ${endDate}`);
-  };
+  useEffect(() => {
+    const elements = document.querySelectorAll(
+      ".slide-up, .slide-right, .slide-left"
+    );
+    const options = {
+      root: null,
+      rootMargin: "0px",
+      threshold: 1,
+    };
+
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          if (entry.target.classList.contains("slide-up")) {
+            entry.target.classList.add("animate__slideInUp");
+          }
+          if (entry.target.classList.contains("slide-right")) {
+            entry.target.classList.add("animate__slideInRight");
+          }
+          if (entry.target.classList.contains("slide-left")) {
+            entry.target.classList.add("animate__slideInLeft");
+          }
+        }
+      });
+    }, options);
+
+    elements.forEach((element) => {
+      observer.observe(element);
+    });
+
+    return () => observer.disconnect();
+  }, []);
 
   return (
     <>
       <div className="grid md:grid-cols-2 text-white md:px-[5rem] gap-9 my-16">
-        <div className="w-[80%]">
+        <div className="w-[80%] slide-left">
           <div className="flex flex-col gap-9">
-            <div>
+            <div className="">
               <h4 className="font-primary-1 text-5xl">Need numbers?</h4>
             </div>
             <div className="flex flex-row flex-wrap gap-4">
@@ -46,25 +74,31 @@ const InfoSection = () => {
                 <span className="block text-sm font-medium text-slate-300">
                   Choose travel dates
                 </span>
-                <input
-                  type="date"
-                  name="date"
+                <DatePicker
+                  showIcon
+                  startDate={startDate}
+                  endDate={endDate}
+                  onChange={(dates) => {
+                    const [start, end] = dates;
+                    setStartDate(start);
+                    setEndDate(end);
+                  }}
+                  selectsRange
+                  dateFormat="dd MMM"
+                  placeholderText="11 Apr - 20 Apr"
                   className="text-slate-400 mt-1 px-5 py-2 bg-dark-blue border shadow-sm border-slate-300 placeholder-slate-400 focus:outline-none focus:border-sky-500 focus:ring-sky-500 block w-full rounded-full sm:text-sm focus:ring-1"
-                  value={dateRange}
-                  onChange={handleDateChange}
-                  placeholder="11 Apr - 20 Apr"
                 />
               </label>
             </div>
             <div>
-              <button className="w-full rounded-full px-8 py-3 bg-mid-orange text-white">
+              <button className="w-full md:w-[87%] rounded-full px-8 py-3 bg-mid-orange text-white">
                 Calculate
               </button>
             </div>
           </div>
         </div>
 
-        <div className="flex flex-col gap-16">
+        <div className="flex flex-col gap-16 slide-right">
           <div className="">
             <h5>Insurance services</h5>
             <div className="flex flex-row flex-wrap gap-4">
