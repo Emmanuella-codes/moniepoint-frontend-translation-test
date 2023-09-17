@@ -25,63 +25,8 @@ body {
   );
   backdrop-filter: blur(10px);
   position: fixed;
-  width: 100%;
+  width: 100% !important;
   z-index: 1000;
-}
-
-@keyframes slideInLeft {
-  from {
-    transform: translateX(-100%);
-  }
-  to {
-    transform: translateX(0);
-  }
-}
-
-@keyframes slideInRight {
-  from {
-    transform: translateX(100%);
-  }
-  to {
-    transform: translateX(0);
-  }
-}
-
-@keyframes slideInUp {
-  0% {
-    transform: translateY(100%);
-    opacity: 0;
-  }
-  100% {
-    transform: translateY(0);
-    opacity: 1;
-  }
-}
-
-@keyframes fadeIn {
-  0%,
-  100% {
-    opacity: 0;
-  }
-  50% {
-    opacity: 1;
-  }
-}
-
-.animate__slideInUp {
-  animation: slideInUp 1.5s ease-in-out;
-}
-
-.animate__slideInLeft {
-  animation: slideInLeft 1s ease-in-out;
-}
-
-.animate__slideInRight {
-  animation: slideInRight 1s ease-out;
-}
-
-.fade-in {
-  animation: fadeIn 3s alternate;
 }
 
 code {

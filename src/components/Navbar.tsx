@@ -17,10 +17,10 @@ const Navbar = () => {
   };
 
   return (
-    <Disclosure as="nav" className="navbar text-white max-w-full">
+    <Disclosure as="nav" className="navbar text-white">
       {({ open }) => (
         <>
-          <div className="max-w-full px-2 sm:px-6 lg:px-8">
+          <div className=" px-6 sm:px-6 lg:px-8 flex-grow">
             <div className="relative flex h-16 items-center justify-between">
               <div className="absolute inset-y-0 right-0 flex items-center sm:hidden">
                 {/* Mobile menu button*/}
