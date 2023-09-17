@@ -15,7 +15,7 @@ body {
   background-color: var(--very-dark-blue);
 }
 
-.container {
+.navbar {
   background: linear-gradient(
     90deg,
     rgba(31, 40, 61, 1) 0%,
@@ -23,6 +23,36 @@ body {
     rgba(11, 15, 23, 1) 85%,
     rgba(31, 40, 61, 1) 100%
   );
+  backdrop-filter: blur(10px);
+  position: fixed;
+  width: 100%;
+  z-index: 1000;
+}
+
+@keyframes slideInLeft {
+  from {
+    transform: translateX(-100%);
+  }
+  to {
+    transform: translateX(0);
+  }
+}
+
+@keyframes slideInRight {
+  from {
+    transform: translateX(100%);
+  }
+  to {
+    transform: translateX(0);
+  }
+}
+
+.animate__slideInLeft {
+  animation: slideInLeft 1s ease-in-out;
+}
+
+.animate__slideInRight {
+  animation: slideInRight 1s ease-in-out;
 }
 
 code {

@@ -17,7 +17,7 @@ const Navbar = () => {
   };
 
   return (
-    <Disclosure as="nav" className="container text-white max-w-full">
+    <Disclosure as="nav" className="navbar text-white max-w-full">
       {({ open }) => (
         <>
           <div className="max-w-full px-2 sm:px-6 lg:px-8">
