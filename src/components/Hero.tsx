@@ -12,7 +12,7 @@ const Hero = () => {
       {/* hero elements */}
       <div className="">
         <Slide direction="left">
-          <h1 className="font-primary-1 text-8xl text-white lg:text-[9.4rem] md:leading-[0.9] font-bold">
+          <h1 className="font-primary-1 text-[5.5rem] text-white lg:text-[9.4rem] md:leading-[0.9] font-bold">
             Darcy's insurance products
           </h1>
         </Slide>
