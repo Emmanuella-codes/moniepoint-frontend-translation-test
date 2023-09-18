@@ -134,7 +134,7 @@ const Footer = () => {
       <div className="flex flex-row items-center">
         <Slide direction="left">
           <div className="flex-shrink-0 items-center">
-            <img src="/logo-white.png" alt="logo" className="h-9 w-auto" />
+            <img src="/logo-white.png" alt="white logo" className="h-9 w-auto" />
           </div>
 
           <div>
