@@ -29,6 +29,10 @@ body {
   z-index: 1000;
 }
 
+.carousel-indicators {
+  bottom: -45px;
+}
+
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
