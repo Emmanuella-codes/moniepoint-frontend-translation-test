@@ -117,3 +117,7 @@ export const reviewData = [
       "With over twenty years of industry experience. Darcy'sinsurance products' has learned a lot. The one thing we know for sure is that we're all about you. If you find searching for insurance frustrating, we are here to help.",
   },
 ];
+
+export const classNames = (...classes: any) => {
+  return classes.filter(Boolean).join(" ");
+};

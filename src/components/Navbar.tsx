@@ -2,11 +2,8 @@ import { useState } from "react";
 import { HiOutlineBars3, HiOutlineXMark } from "react-icons/hi2";
 import { LuKey } from "react-icons/lu";
 import { BiChevronDown } from "react-icons/bi";
-import { navigation } from "./types";
+import { classNames, navigation } from "./types";
 
-const classNames = (...classes: any) => {
-  return classes.filter(Boolean).join(" ");
-};
 
 const Navbar = () => {
   const [isDropdownOpen, setIsDropdownOpen] = useState(false);

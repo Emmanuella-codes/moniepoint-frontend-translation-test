@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import DatePicker from "react-datepicker";
 import "react-datepicker/dist/react-datepicker.css";
-import { infoItems, services } from "./types";
+import { classNames, infoItems, services } from "./types";
 import { Slide, Fade } from "react-awesome-reveal";
 
 const InfoSection = () => {
@@ -26,7 +26,12 @@ const InfoSection = () => {
                 {infoItems.map((item, idx) => (
                   <button
                     key={idx}
-                    className="bg-dark-blue rounded-full px-5 py-2"
+                    className={classNames(
+                      item.current
+                        ? "bg-gray-300 text-gray-800 flex items-center"
+                        : "text-gray-300 hover:bg-gray-700 hover:text-white",
+                      "rounded-full px-5 py-2 bg-dark-blue"
+                    )}
                   >
                     {item.name}
                   </button>
@@ -52,6 +57,7 @@ const InfoSection = () => {
                     Choose travel dates
                   </span>
                   <DatePicker
+                    portalId="root-portal"
                     showIcon
                     startDate={startDate}
                     endDate={endDate}

@@ -6,7 +6,7 @@ const Services = () => {
     <div className="flex flex-col md:flex-row text-white md:px-[5rem] gap-20 my-20">
       <div className="">
         <Slide direction="left">
-          <h4 className="font-primary-1 text-[5rem] md:text-7xl leading-[1] w-[70%] md:w-[60%]">
+          <h4 className="font-primary-1 text-[5rem] md:text-7xl leading-[1] w-[74%] md:w-[60%]">
             Support at every <span className="text-[7.8rem]">Step</span>
           </h4>
         </Slide>

@@ -28,7 +28,7 @@ const Carousel = () => {
                   <div>
                     <p>{review.overview}</p>
                   </div>
-                  <div className="">
+                  <div className="px-[0.6rem]">
                     <button className="bg-light-blue px-8 py-3 rounded-full text-black">
                       Get a consultation
                     </button>
