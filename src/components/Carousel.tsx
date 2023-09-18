@@ -5,7 +5,7 @@ import { Fade } from "react-awesome-reveal";
 
 const Carousel = () => {
   return (
-    <CCarousel>
+    <CCarousel interval={1500} indicators>
       {reviewData.map((review, idx) => (
         <CCarouselItem key={idx}>
           <div className="grid md:grid-cols-3 gap-3 md:gap-20">
