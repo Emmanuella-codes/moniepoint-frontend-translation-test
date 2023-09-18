@@ -5,7 +5,7 @@ import { Slide } from "react-awesome-reveal";
 const Review = () => {
   return (
     <div className="grid grid-cols-1 md:grid-cols-3 md:px-[5rem] my-7 text-white gap-20">
-      <div className="order-last md:col-span-2 bg-dark-blue px-14 py-12 rounded-[4rem]">
+      <div className="order-last md:col-span-2 bg-dark-blue px-7 md:px-14 py-12 rounded-[4rem]">
         <Carousel />
       </div>
 

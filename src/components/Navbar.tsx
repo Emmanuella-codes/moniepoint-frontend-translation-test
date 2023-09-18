@@ -2,17 +2,18 @@ import { useState } from "react";
 import { HiOutlineBars3, HiOutlineXMark } from "react-icons/hi2";
 import { LuKey } from "react-icons/lu";
 import { BiChevronDown } from "react-icons/bi";
-import { navigation } from "./types";
-
-const classNames = (...classes: any) => {
-  return classes.filter(Boolean).join(" ");
-};
+import { classNames, navigation } from "./types";
 
 const Navbar = () => {
-  const [isDropdownOpen, setIsDropdownOpen] = useState(false);
+  const [isOpen, setIsOpen] = useState(false);
+  const [openDropdown, setOpenDropdown] = useState(false);
 
   const toggleDropdown = () => {
-    setIsDropdownOpen(!isDropdownOpen);
+    setOpenDropdown(!openDropdown);
+  };
+
+  const toggleOpen = () => {
+    setIsOpen(!isOpen);
   };
 
   return (
@@ -21,12 +22,12 @@ const Navbar = () => {
         <div className="relative flex h-16 items-center justify-between">
           <div className="absolute inset-y-0 right-0 flex items-center sm:hidden">
             <button
-              onClick={toggleDropdown}
+              onClick={toggleOpen}
               className="relative inline-flex items-center justify-center rounded-md p-2 text-gray-400 hover:bg-gray-700 hover:text-white focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white"
             >
               <span className="absolute -inset-0.5" />
               <span className="sr-only">Open main menu</span>
-              {isDropdownOpen ? (
+              {isOpen ? (
                 <HiOutlineXMark className="block h-6 w-6" aria-hidden="true" />
               ) : (
                 <HiOutlineBars3 className="block h-6 w-6" aria-hidden="true" />
@@ -65,9 +66,11 @@ const Navbar = () => {
                       <BiChevronDown />
                     </span>
                   )}
-                  {item.hasDropdown && isDropdownOpen && (
+                  {item.hasDropdown && isOpen && (
                     <div className="z-10 mt-2 w-48 bg-white border border-gray-200 rounded-md shadow-lg">
-                      {/* ... (existing code) */}
+                      {item.dropdownItems?.map((items) => (
+                        <button key={items.name}>{items.name}</button>
+                      ))}
                     </div>
                   )}
                 </div>
@@ -93,7 +96,7 @@ const Navbar = () => {
           </div>
         </div>
 
-        <div className={isDropdownOpen ? "block" : "hidden"}>
+        <div className={isOpen ? "block" : "hidden"}>
           <div className="space-y-1 px-2 pb-3 pt-2">
             {navigation.map((item) => (
               <a

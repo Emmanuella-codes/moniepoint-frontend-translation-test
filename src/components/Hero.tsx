@@ -3,6 +3,10 @@ import { HiOutlineArrowLongDown } from "react-icons/hi2";
 import { Slide } from "react-awesome-reveal";
 
 const Hero = () => {
+  const scrollToBottom = () => {
+    window.scrollTo({ top: document.body.scrollHeight, behavior: "smooth" });
+  };
+
   return (
     <div className="grid grid-cols-1 md:grid-cols-2 gap-2 md:px-20 pt-24 pb-5">
       {/* hero elements */}
@@ -40,7 +44,10 @@ aspect-square w-8 h-8 flex justify-center items-center text-very-dark-blue text-
                 value-added services.
               </p>
             </div>
-            <button className="arrow bg-gradient-to-r from-[#1F283D] via-[#0B0F17] to-[#1F283D] w-1/5 md:w-1/4 py-2 rounded-2xl flex">
+            <button
+              className="arrow bg-gradient-to-r from-[#1F283D] via-[#0B0F17] to-[#1F283D] w-1/5 md:w-1/4 py-2 rounded-2xl flex"
+              onClick={scrollToBottom}
+            >
               <HiOutlineArrowLongDown size={70} />
             </button>
           </div>
