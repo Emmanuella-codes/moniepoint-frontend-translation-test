@@ -1,12 +1,31 @@
 # Moniepoint Frontend Translation Test
 
-This project is a recreation of a Dribbble design using modern frontend technologies, including React and TailwindCSS.
+This project is a recreation of a Dribbble design (https://dribbble.com/shots/21522044-Insurance-Website) using modern frontend technologies, including React and TailwindCSS.
 
 ## Technologies Used
 
 - **React**: Empowering the user interface with a dynamic and interactive experience, React serves as the foundation for building seamless components and managing state in this project.
 
 - **TailwindCSS**: Tailwind CSS plays a key role in handling the basic styling of this project. Its utility-first approach allows for rapid prototyping and easy customization, ensuring a clean and responsive design.
+
+## Project Structure
+The project is organized into several components, each responsible for a specific section or feature. The main components include:
+
+- **Navbar**: Handles the navigation bar at the top of the page. It includes the logo and links to different sections.
+
+- **Hero**: Contains the hero section with a prominent title, description, image and an arrow button to scroll down.
+
+- **Gallery**: Displays a grid of images related to insurance services, with buttons for each category.
+
+- **Review**: Displays the company's pioneers and writeup.
+  
+- **Carousel**: Contains the pictures and writeup of the pioneers  
+
+- **Services**: Describes the services offered, with details on how users can participate and benefit from them.
+
+- **InfoSection**: Displays a mini form and links to other sections of the website.
+
+  
 
 ## Getting Started with Create React App
 
